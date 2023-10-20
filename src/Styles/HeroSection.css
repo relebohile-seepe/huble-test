@@ -1,0 +1,174 @@
+/* HeroSection.css */
+
+.hero-section {
+  background-image: url('/public/images/hero.png');
+  background-size: cover;
+  background-position: left; /* Change background position to left */
+  color: white;
+  text-align: left; /* Align text to the left */
+  padding: 100px 0;
+  position: relative;
+}
+
+/* Add the dark overlay to the background image */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(24, 24, 24, 0.5);
+  z-index: 1; 
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0; /* Remove auto margin to align content to the left */
+  padding: 20px;
+  display: flex;
+  font-size: 60px;
+  flex-direction: column; /* Arrange content in a column layout */
+  align-items: flex-start; /* Align items to the left */
+  position: relative; /* Add position relative to establish stacking context */
+  z-index: 2; /* Set a higher z-index for the content */
+}
+
+p, h1, button {
+  z-index: 3; /* Set an even higher z-index for text and buttons */
+}
+
+p {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-left: 0; /* Reset margin-left */
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  margin-left: 0; /* Reset margin-left */
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+  align-items: center; /* Align items vertically */
+  gap: 10px;
+  margin-top: 20px;
+  margin-left: 0; /* Reset margin-left for the button container */
+}
+
+button {
+  background-color: #ff5a5f;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 0; /* Reset margin-left for buttons */
+}
+
+.button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid #ff5a5f;
+}
+
+.button:hover {
+  background-color: #ff5a5f;
+  color: black;
+}
+
+.header {
+  color: #ff5a5f;
+  font-weight: bold;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: flex-start; /* Align text to the top */
+  text-align: left; /* Left-align the text within each element */
+  padding: 20px; /* Add spacing around the text */
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the text to start at the same point */
+  text-align: left; /* Left-align the text within each element */
+}
+
+h1 {
+  margin-bottom: 10px; /* Add space between h1 and p */
+}
+
+p {
+  margin: 0; /* Reset margin for p to avoid extra spacing */
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  .hero-content {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .button-container {
+    margin-top: 15px;
+  }
+}
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  .hero-content {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .button-container {
+    margin-top: 15px;
+  }
+}
+
+/* Styles for tablet devices */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+  .hero-content {
+    font-size: 45px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+}

@@ -1,0 +1,73 @@
+/* ImageSlider.css */
+.image-slider {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.control-prev, .control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color:  #ff5a5f;
+  cursor: pointer;
+}
+
+.control-prev {
+  left: 20px;
+}
+
+.control-next {
+  right: 20px;
+}
+
+.image-carousel {
+  display: flex;
+  transition: transform 1s linear;
+  width: 100%;
+  animation: loop 30s linear infinite; /* Use a new animation for looping */
+}
+
+.image-slide {
+  flex-shrink: 0;
+  width: 20%;
+  height: 60px;
+}
+
+.paused {
+  animation-play-state: paused;
+}
+
+@media (min-width: 769px) {
+  .control-prev, .control-next {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .image-slide {
+    width: 33.33%;
+    margin-right: 10px; /* Adjust margin for tablet screens */
+    /* Adjust the margin here as well to make images closer */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-slide {
+    width: 50%;
+    margin-right: 5px; /* Adjust margin for mobile screens */
+    /* Adjust the margin here as well to make images closer */
+  }
+}
+
+@keyframes loop {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-300%); /* Adjust this value based on the number of slides */
+  }
+}

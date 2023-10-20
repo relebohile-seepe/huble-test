@@ -1,0 +1,65 @@
+.button { 
+    box-sizing: border-box;
+    line-height: inherit;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    text-align: center;
+    outline: 0;
+    margin: 10px 0 24px 0;
+    font-style: normal;
+    text-decoration: none;
+    background: rgba(255,90,95,1.0);
+    border-radius: 30px;
+    text-transform: uppercase;
+    border: 1px solid #ff5a5f;
+    transition: all .3s ease-in-out;
+    font-family: 'CircularStd','sans-serif';
+    font-size: 16px;
+    padding-top: 16px;
+    padding-right: 40px;
+    padding-bottom: 16px;
+    padding-left: 40px;
+    width: auto;
+    color: #fff !important;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button-2 {
+  box-sizing: border-box;
+  line-height: inherit;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: center;
+  outline: 0;
+  margin: 10px 0 24px 0;
+  font-style: normal;
+  text-decoration: none;
+  background: white; /* Set the background color to white */
+  border-radius: 30px;
+  text-transform: uppercase;
+  border: 1px solid #ff5a5f; /* Set the border color to #ff5a5f */
+  transition: all 0.3s ease-in-out;
+  font-family: 'CircularStd', 'sans-serif';
+  font-size: 16px;
+  padding: 16px 40px; /* Consolidate padding properties */
+  width: auto;
+  color: #ff5a5f !important; /* Set the text color to #ff5a5f */
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+  /* Add a hover effect */
+  .button-2:hover {
+    background: #ff5a5f; /* Change background color on hover */
+    color: yellow; /* Change text color to black on hover */
+}
