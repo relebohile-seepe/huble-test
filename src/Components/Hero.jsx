@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/HeroSection.css';
 import '../Styles/ImageSlider.css';
+import ImageSliderWithMouse from './ImageSliderWithMouse';
 
 function HeroSection() {
 
@@ -35,6 +36,8 @@ function HeroSection() {
         </div>
         </div>
       </div>
+      <ImageSliderWithMouse imageFileNames={imageFileNames} />
+      {/* 
       <div className="image-slider" onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
         <div className={`image-carousel ${isPaused ? 'paused' : ''}`}>
         {imageFileNames.map((fileName, index) => (
@@ -44,7 +47,9 @@ function HeroSection() {
         ))}
     
       </div>
+      
     </div>
+    */}
     </div>
   );
 }
